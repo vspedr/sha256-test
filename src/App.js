@@ -1,22 +1,27 @@
-import logo from './logo.svg';
+import jsSHA from 'jssha'
+import shajs from 'sha.js'
+
 import './App.css';
 
 function App() {
+  const testString = '{__typename}'
+  const shaObj = new jsSHA("SHA-256", "TEXT", { encoding: "UTF8" });
+  shaObj.update(testString);
+  const hash1 = shaObj.getHash("HEX");
+  
+  // console.log(shajs('sha256').update('42').digest('hex'))
+  
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <h1>sha.js</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {shajs('sha256').update(testString).digest('hex')}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>jssha</h1>
+        <p>
+          {hash1}
+        </p>
       </header>
     </div>
   );
