@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sha256-test/static/css/main.073c9b0a.css",
+    "main.js": "/sha256-test/static/js/main.8deb4f87.js",
+    "static/js/787.ee31b552.chunk.js": "/sha256-test/static/js/787.ee31b552.chunk.js",
+    "index.html": "/sha256-test/index.html",
+    "main.073c9b0a.css.map": "/sha256-test/static/css/main.073c9b0a.css.map",
+    "main.8deb4f87.js.map": "/sha256-test/static/js/main.8deb4f87.js.map",
+    "787.ee31b552.chunk.js.map": "/sha256-test/static/js/787.ee31b552.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.8deb4f87.js"
+  ]
+}
